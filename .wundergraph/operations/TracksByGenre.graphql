@@ -1,0 +1,8 @@
+query TracksByGenre($GenreId: Int!) {
+  chinook_findManyTrack(where: { GenreId: { equals: $GenreId } }) {
+    TrackId
+    Name
+    AlbumId
+    Composer
+  }
+}
